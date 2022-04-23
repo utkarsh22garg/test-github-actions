@@ -13,6 +13,7 @@ jobs:
                         - uses: actions/setup-node@v3
                           with:
                                   node-version: "14.7.0"
-                        - run: |
-                                node -v
-                                npm -v
+                        - run: npm install
+                          name: Install packages
+                        - name: Build App
+                          run: npm run build
