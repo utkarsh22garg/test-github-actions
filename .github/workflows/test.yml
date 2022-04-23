@@ -9,5 +9,5 @@ jobs:
         print-hello-world2:
                 runs-on: ubuntu-latest
                 steps:
-                        - run: echo "Hello world again !!!!"
-                        - run: echo "Here we go again."
+                        - uses: actions/checkout@v2
+                        - run: tree
